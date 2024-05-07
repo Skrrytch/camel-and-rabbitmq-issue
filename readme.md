@@ -3,7 +3,7 @@
 This example project is intended to show the different behaviour of the components
 
 - `camel-rabbitmq` (deprecated, removed in camel 4.x)
-- `camel-sprint-rabbitmq`
+- `camel-spring-rabbitmq`
 
 ###  Configuring RabbitMQ
 
@@ -28,7 +28,7 @@ Then you can run this example using
 ### Description of my issue
 
 This example project is intended to show the different behaviour of the components
-`camel-rabbitmq` (deprecated, removed in camel 4.x) and `camel-sprint-rabbitmq`:
+`camel-rabbitmq` (deprecated, removed in camel 4.x) and `camel-spring-rabbitmq`:
 
 There are two route builders:
 
