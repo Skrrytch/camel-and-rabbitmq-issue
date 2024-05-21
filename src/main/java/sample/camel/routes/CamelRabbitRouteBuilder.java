@@ -50,7 +50,7 @@ public class CamelRabbitRouteBuilder extends RouteBuilder {
 
         onException(IllegalArgumentException.class)
                 .maximumRedeliveries(999) // to have enough time for testing
-                .redeliveryDelay(3000) // every 3 seconds
+                .redeliveryDelay(60000) // every 3 seconds
                 .process(x -> System.out.println(ZonedDateTime.now() + ": Camel-Rabbit FAILURE: " + x.getMessage().getBody(String.class)))
                 .onRedelivery(x -> System.out.println(ZonedDateTime.now() + ": Camel-Rabbit REDELIVERY: " + x.getMessage().getBody(String.class)));
 
